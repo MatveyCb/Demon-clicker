@@ -1,0 +1,94 @@
+.home {
+    background: url("../img/home.png")0 0/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    overflow: hidden;
+}
+
+.home h1 {
+    font-size: 64px;
+    color: #CA0101;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.home form {
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.home input {
+    width: 100%;
+    background-color: #a5000071;
+    border-radius: 10px;
+    border: 1px solid #CA0101;
+    height: 35px;
+    padding: 0 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+}
+
+.home input::-webkit-input-placeholder {
+    color: rgb(255, 174, 174) !important;
+}
+
+.home button {
+    height: 35px;
+    border-radius: 10px;
+    background-color: #5d0000ba;
+    border: 1px solid #CA0101;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.home-wraper {
+    margin-left: 540px;
+}
+
+.meteor {
+    position: absolute;
+    top: -50%;
+    animation: meteor 3s infinite linear;
+}
+
+#meteor-1 {
+    left: 25%;
+    animation-delay: 1.5s;
+}
+
+#meteor-2 {
+    left: 40%;
+    animation-delay: 0.5s;
+}
+
+#meteor-3 {
+    left: 55%;
+    animation-delay: 3.89s;
+}
+
+
+@keyframes meteor {
+    0% {
+        top: -50%;
+        transform: translate(0);
+    }
+    30%,100%{
+            top: 120%;
+            transform: translate(-500px);
+    }
+
+}

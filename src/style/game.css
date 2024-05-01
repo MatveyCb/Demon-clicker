@@ -1,0 +1,149 @@
+body {
+    background: url("../img/fight-pleace.png")0 -50px/cover no-repeat;
+    height: 100dvh;
+}
+
+.root {
+    padding: 50px 0;
+}
+
+.toggle_shop {
+    width: 197px;
+    height: 35px;
+    border-radius: 15px;
+}
+
+.shop {
+    background: rgba(0, 0, 0, 0.474);
+    height: 100dvh;
+    width: 360px;
+    padding: 20px 25px 20px 25px;
+    overflow: auto;
+}
+
+.modal-shop {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    transition: all 0.3s;
+}
+
+.modal-shop.open{
+    left: 0;
+}
+
+.shop::-webkit-scrollbar{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 6px;
+}
+
+.shop::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255, 0.649);
+    width: 6px;
+}
+
+.shop_item{
+    display: flex;
+    align-items: center;
+    height: 110px;
+    padding: 0 10px;
+    gap: 10px;
+    color: aliceblue;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+}
+
+    .shop_item:disabled{
+        opacity: 0.3;
+    }
+
+.shop_item h3{
+    font-size: 18px;
+}
+
+.shop_item p{
+    font-size: 18px;
+}
+
+.shop_item-img{
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.649);
+    border-radius: 50px;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop_item img{
+    height: 75%;
+    object-fit: cover;
+}
+
+.shop_item .spear{
+    height: 68%;
+}
+
+.shop_item.active{
+    border: 2px solid white;
+    border-radius: 60px;
+}
+
+.boss{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.boss img{
+    cursor: pointer;
+}
+
+.HP_wraper{
+    width: 680px;
+    height: 35px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 350px);
+    border-radius: 15px;
+    border: 1px solid red;
+    background-color: rgba(255, 0, 0, 0.347);
+}
+
+.HP_bar{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.HP_text{
+    position: absolute;
+    width: 240px;
+    line-height: 35px;
+    text-align: center;
+    left: calc(50% - 120px);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer{
+    background-color: aliceblue;
+    width: 197px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 15px;
+    border: 1px solid black;
+}

@@ -1,0 +1,34 @@
+body{
+    background: url("../img/game.png")0 0/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boss_list-row{
+    justify-content: space-between;
+    display: flex;
+    gap: 7px;
+}
+
+h1{
+    color: white;
+    margin: 50px 0;
+}
+
+.boss_list-btn{
+    width: 250px;
+    height: 200px;
+    border-radius: 15.5px;
+    background-color: #ca010144;
+    border: 1px solid #CA0101;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    cursor: pointer;
+}
